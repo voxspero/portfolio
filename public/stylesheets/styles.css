@@ -1,0 +1,318 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(12, 17, 24);
+    font-family: 'Barlow';
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 7.5rem; /* height of your footer */
+}
+
+.btn {
+    font-family: 'Barlow';
+}
+
+/* NAVBAR */
+
+.content {
+    padding-top: 3.75rem;
+    padding-bottom: 1rem;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+}
+
+/* .sticky + .content {
+    padding-top: 50px;
+}  */
+
+.navbar {
+    /* position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between; */
+    padding: 0rem 1rem;
+    box-shadow: 0px 0px 5px 2px rgba(5, 7, 10, 0.3);
+}
+  
+/* .navbar > .container,
+  .navbar > .container-fluid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+} */
+  
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.85rem;
+    padding-bottom: 1rem;
+    padding-right: 1.70rem;
+    padding-left: 0.45rem;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-brand-divider {
+    border-right: 1px solid rgb(34, 42, 68);
+    height: 3rem;
+    width: 1px;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+    padding-top: 1.05rem;
+    padding-bottom: .80rem;
+    /* margin-right: 0.45rem;
+    margin-left: 0.45rem; */
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+    height: 100%;
+}
+
+/* .navbar-nav .nav-item {
+    padding-right: 3rem;
+    padding-left: 3rem;
+} */
+  
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+}
+  
+.navbar-text {
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+  
+/* .navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: none;
+}
+  
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+  
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
+  
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+  
+.navbar-toggler:hover, .navbar-toggler:focus {
+    text-decoration: none;
+}
+  
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+} */
+
+/* NAVBAR STYLES */
+
+.navbar-style .navbar-brand {
+    color: rgb(255, 255, 255);
+}
+  
+.navbar-style .navbar-brand:hover, .navbar-style .navbar-brand:focus {
+    color: rgb(250, 66, 56);
+}
+  
+.navbar-style .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    /* font-family: 'Barlow';
+    font-weight: 900;  */
+    font-family: dunbar-tall;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.1s;
+    border-bottom: 0.35rem solid transparent;
+    /* text-transform: uppercase; */
+}
+  
+.navbar-style .navbar-nav .nav-link:hover, .navbar-style .navbar-nav .nav-link:focus {
+    color: rgb(255, 195, 30); 
+    /* background-color: rgb(21, 26, 42); */
+    background-image: linear-gradient(rgb(15, 19, 31),rgb(26, 32, 51));
+    border-bottom: 0.35rem solid rgb(250, 66, 56);
+}
+  
+.navbar-style .navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.25);
+}
+  
+.navbar-style .navbar-nav .show > .nav-link,
+.navbar-style .navbar-nav .active > .nav-link,
+.navbar-style .navbar-nav .nav-link.show,
+.navbar-style .navbar-nav .nav-link.active {
+    color: #fff;
+}
+  
+.navbar-style .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+  
+.navbar-style .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+  
+.navbar-style .navbar-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+  
+.navbar-style .navbar-text a {
+    color: #fff;
+}
+  
+.navbar-style .navbar-text a:hover, .navbar-style .navbar-text a:focus {
+    color: #fff;
+}
+
+.navbar-bg {
+    background-color: rgb(27, 33, 52) !important;
+}
+  
+a.navbar-bg:hover, a.navbar-bg:focus,
+  button.navbar-bg:hover,
+  button.navbar-bg:focus {
+    background-color: #1d2124 !important;
+}
+
+.navbar-portfolio-label {
+    color: rgb(66, 76, 109);
+    /* font-family: 'Barlow';
+    font-weight: 900;  */
+    font-family: dunbar-tall;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 0.9rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-portfolio-paren {
+    color: rgb(100, 110, 143);
+    /* font-family: 'Barlow';
+    font-weight: 900;  */
+    font-family: dunbar-tall;
+    font-weight: 500;
+    font-size: 14px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.9rem;
+    padding-bottom: 1rem;
+}
+
+/* FOOTER */
+  
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: rgb(10, 14, 20);
+}
+
+.footer-brand {
+    /* background-image: "/img/site/geode.png";
+    background-size: contain; */
+    padding-right: 2rem;
+}
+
+.footer-link-group .footer-link::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(178, 188, 219); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 0.5rem; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  } /* footer bullet style */
+
+.footer-link-group {
+    padding: 1rem 2rem;
+    margin: 0;
+    font-size: 12px;
+    list-style-type: none;
+}
+
+.footer-link {
+    color: rgb(86, 179, 228);
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.footer-link:hover {
+    color: rgb(255, 195, 30); 
+    text-decoration: none;
+}
+
+.footer-link:focus {
+    color: rgb(250, 66, 56);
+    text-decoration: none;
+}
+
+.footer-login-link {
+    color: rgb(134, 37, 32);
+}
+
+.footer-login-link:hover {
+    color: rgb(250, 66, 56);
+}
+
+.footer-login-link:focus {
+    color: rgb(250, 66, 56);
+}
