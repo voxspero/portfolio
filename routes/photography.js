@@ -6,11 +6,11 @@ const express       = require("express"),
 // 1 - INDEX
 
 router.get("/", function(req, res){
-    Image.find({}, function(err, images){
+    Photo.find({}, function(err, photos){
         if(err){
             console.log(err);   
         } else {
-            res.render("photography/index", { images: images, currentUser: req.user });
+            res.render("photography/index", { photos: photos });
         }
     });
 });

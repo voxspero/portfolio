@@ -6,7 +6,7 @@ const express       = require("express"),
 // 1 - INDEX
 
 router.get("/", function(req, res){
-    WebApp.find({}, function(err, webapp){
+    WebApp.find({}, function(err, webapps){
         if(err){
             console.log(err);   
         } else {
@@ -58,7 +58,7 @@ router.get("/:id", function(req, res){
         if(err){
             console.log(err);
         } else {
-            res.render("photography/show", { webapp: webapp });
+            res.render("webapps/show", { webapp: webapp });
         }
     });
 });

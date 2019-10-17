@@ -27,8 +27,8 @@ const   express             = require("express"),
 const   digitalRoutes       = require("./routes/digital"),
         illustrationRoutes  = require("./routes/illustration"),
         photoRoutes         = require("./routes/photography"),
-        projectRoutes       = require("./routes/project"),
-        webappRoutes        = require("./routes/webapp");
+        projectRoutes       = require("./routes/projects"),
+        webappRoutes        = require("./routes/webapps");
         // authRoutes      = require("./routes/auth");
 
 // APP CONFIG
@@ -47,17 +47,17 @@ app.use(express.static(__dirname + "/public"));
 app.use("/digital", digitalRoutes);
 app.use("/illustration", illustrationRoutes);
 app.use("/photography", photoRoutes);
-app.use("/project", projectRoutes);
-app.use("/webapp", webappRoutes);
+app.use("/projects", projectRoutes);
+app.use("/webapps", webappRoutes);
 
-// INDEX
+// INDEX (LANDING)
 
 app.get("/", function(req,res){
-    res.render("home");
+    res.render("landing");
 });
 
 // SERVER
 
 app.listen(process.env.PORT || 3000, function(){
-    console.log("Listen server started on.");
+    console.log("Listen server started.");
 });
