@@ -1,7 +1,29 @@
 <% include ../partials/header.ejs %>
 
-<h1>PHOTO INDEX</h1>
-
-<a href="/">GO HOME</a>
+<section class="container-fluid content">
+    <div class="row justify-content-center">
+        <div class="col-lg col-md d-sm-none"></div>
+        <div class="col-lg-10 col-md col-sm">
+            <div class="d-flex row justify-content-center pt-3">
+                <% photos.forEach(function(photo){ %>
+                    <div class="card index-card my-3 mx-3">
+                        <a class="card-img-top index-img" href="/photos/<%= photo._id %>" style="background-image: url('<%= photo.path[0] %>');"></a>
+                        <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= photo.title %><span class="card-text index-card-year"><%= photo.year %></span></h5>
+                        <div class="card-body">
+                            
+                            <% if(photo.description.length > 175) { %>    
+                                <p class="card-text"><%= photo.description.substring(0, 175) %><span class="ellipsis">  .  .  .  </span></p>
+                            <% } else { %>
+                                <p class="card-text"><%= photo.description %></p>
+                            <% } %>
+                            <a href="/photography/<%= photo._id %>" class="btn btn-sm index-card-button mt-1">View</a>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+        <div class="col-lg col-md d-sm-none"></div>
+    </div>
+</section>
 
 <% include ../partials/footer.ejs %>

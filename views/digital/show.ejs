@@ -1,5 +1,45 @@
 <% include ../partials/header.ejs %>
 
-<h1>DIGITAL SHOW</h1>
+<section class="content">
+    <!-- <div class="show-image-container" style="background-image: url('<%= image.path %>');" data-toggle="modal" data-target="#displayModal">
+    </div>
+
+    <div class="modal fade" id="displayModal" tabindex="-1" role="dialog">
+        <div class="modal-image" style="background-image: url('<%= image.path %>'); background-size: contain;"document">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div> -->
+
+    <div class="show-image-container" onclick="openModal();" style="background-image: url('<%= image.path %>');">
+    </div>
+
+    <div id="imageModal" class="modal-box">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <div class="d-flex justify-content-center modal-image" style="background-image: url('<%= image.path %>');">
+            <!-- <img src="<%= image.path %>"> -->
+        </div>
+    </div>
+
+    <div class="row mx-0">
+        <div class="col-lg col-md">
+        </div>
+        <div class="col-lg-10 col-md-10">
+            <div class="d-flex flex-column align-items-center">
+                <div class="card show-card my-5">
+                    <h5 class="card-header d-flex align-items-center justify-content-between show-card-title"><%= image.title %><span class="card-text show-card-year"><%= image.year %></span></h5>
+                    <div class="card-body">
+                        <h4 class="card-title">MEDIA: <% image.media %></h4>
+                        <p class="show-card-text preserve-space"><%= image.description %></p>
+                        <a href="/" class="btn show-card-button">Back To Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg col-md">
+        </div>
+    </div>
+</section>
 
 <% include ../partials/footer.ejs %>
