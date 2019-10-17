@@ -1,7 +1,7 @@
 var mongoose    = require("mongoose");
 
 var PhotoSchema = new mongoose.Schema({
-    path: String,
+    path: [],
     created: {
         type: Date,
         default: Date.now
@@ -9,7 +9,7 @@ var PhotoSchema = new mongoose.Schema({
     title: String,
     description: String,
     media: String,
-    year: String,
+    year: Number
 });
 
 var Photo = mongoose.model("Photo", PhotoSchema);

@@ -14,7 +14,7 @@ const   express             = require("express"),
         // Project             = require("./models/project"),
         // WebApp              = require("./models/webapp"),
         // User            = require("./models/user"),
-        // seedDB              = require("./seeds"),
+        seedDB              = require("./seeds"),
         mongooseOptions     = {
                                 useNewUrlParser: true,
                                 useUnifiedTopology: true,
@@ -40,7 +40,7 @@ mongoose.connect(dbUrl, mongooseOptions, function(){
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
-// seedDB();
+seedDB();
 
 // ROUTES
 

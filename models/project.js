@@ -9,7 +9,7 @@ var ProjectSchema = new mongoose.Schema({
     title: String,
     description: String,
     media: String,
-    year: String,
+    year: Number
 });
 
 var Project = mongoose.model("Project", ProjectSchema);
