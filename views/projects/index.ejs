@@ -1,13 +1,17 @@
 <% include ../partials/header.ejs %>
 
 <section class="container-fluid content">
+
     <div class="row justify-content-center">
+
         <div class="col-lg col-md d-sm-none"></div>
+
         <div class="col-lg-10 col-md col-sm">
+
             <div class="d-flex row justify-content-center pt-3">
                 <% projects.forEach(function(project){ %>
                     <div class="card index-card my-3 mx-3">
-                        <a class="card-img-top index-img" href="/projects/<%= project._id %>" style="background-image: url('<%= project.path %>');"></a>
+                        <a class="card-img-top index-img" href="/projects/<%= project._id %>" style="background-image: url('<%= project.path[0] %>');"></a>
                         <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= project.title %><span class="card-text index-card-year"><%= project.year %></span></h5>
                         <div class="card-body">
                             
@@ -21,9 +25,15 @@
                     </div>
                 <% }); %>
             </div>
+
+            <div class="index-padding-bottom"></div>
+
         </div>
+
         <div class="col-lg col-md d-sm-none"></div>
+
     </div>
+    
 </section>
 
 <% include ../partials/footer.ejs %>

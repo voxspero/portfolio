@@ -8,6 +8,7 @@ const   faker        = require("faker"),
         ],       
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
+        camera: "Canon Digital Rebel XTi",
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -17,6 +18,7 @@ const   faker        = require("faker"),
         ], 
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
+        camera: "Canon Digital Rebel XTi",
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -26,6 +28,7 @@ const   faker        = require("faker"),
         ], 
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
+        camera: "Canon Digital Rebel XTi",
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -35,6 +38,7 @@ const   faker        = require("faker"),
         ], 
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
+        camera: "Canon Digital Rebel XTi",
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -44,6 +48,7 @@ const   faker        = require("faker"),
         ], 
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
+        camera: "Canon Digital Rebel XTi",
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -53,6 +58,7 @@ const   faker        = require("faker"),
         ], 
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
+        camera: "Canon Digital Rebel XTi",
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -62,6 +68,7 @@ const   faker        = require("faker"),
         ], 
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
+        camera: "Canon Digital Rebel XTi",
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -71,6 +78,7 @@ const   faker        = require("faker"),
         ], 
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
+        camera: "Canon Digital Rebel XTi",
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -80,6 +88,7 @@ const   faker        = require("faker"),
         ], 
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
+        camera: "Canon Digital Rebel XTi",
         year: seedFunction.getRndInteger(2012, 2019)
     },
 ];

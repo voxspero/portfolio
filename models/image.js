@@ -8,7 +8,7 @@ var ImageSchema = new mongoose.Schema({
     },
     title: String,
     description: String,
-    media: String,
+    media: [],
     year: Number
 });
 

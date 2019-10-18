@@ -54,7 +54,7 @@ router.get("/", function(req, res){
 // 4 - SHOW
 
 router.get("/:id", function(req, res){
-    Illustration.findById(req.params.id, function(err, photo){
+    Illustration.findById(req.params.id, function(err, illustration){
         if(err){
             console.log(err);
         } else {

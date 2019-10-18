@@ -8,7 +8,7 @@ var IllustrationSchema = new mongoose.Schema({
     },
     title: String,
     description: String,
-    media: String,
+    media: [],
     year: Number
 });
 

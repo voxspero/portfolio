@@ -1,34 +1,45 @@
 <% include ../partials/header.ejs %>
 
 <section class="content">
-    <div class="show-image-container" onclick="openModal();" style="background-image: url('<%= photo.path[0] %>');">
+
+    <div class="d-flex justify-content-center align-items-center show-image-container">
+        <a class="show-image-link" href="<%= photo.path[0] %>" style="background-image: url('<%= photo.path[0] %>');">
+            <img class="show-image" src="<%= photo.path[0] %>">
+        </a>
     </div>
 
-    <div id="imageModal" class="modal-box">
+    <!-- <div id="imageModal" class="modal-box">
         <span class="close" onclick="closeModal();">&times;</span>
-        <div class="d-flex justify-content-center modal-image" style="background-image: url('<%= photo.path[0] %>');">
-            <!-- <img src="<%= photo.path[0] %>"> -->
-        </div>
-    </div>
+        <a href="<%= photo.path[0] %>"><div class="d-flex justify-content-center align-items-center modal-image">
+            <img src="<%= photo.path[0] %>">
+        </div></a>
+    </div> -->
 
     <div class="row mx-0">
+
         <div class="col-lg col-md">
         </div>
+
         <div class="col-lg-10 col-md-10">
             <div class="d-flex flex-column align-items-center">
                 <div class="card show-card my-5">
                     <h5 class="card-header d-flex align-items-center justify-content-between show-card-title"><%= photo.title %><span class="card-text show-card-year"><%= photo.year %></span></h5>
                     <div class="card-body">
-                        <h4 class="card-title">MEDIA: <% photo.media %></h4>
+                        <h4 class="card-title">Camera Used: </h4><p style="padding-left: 1.75rem;"><%= photo.camera %></p>
+                        <hr class="mt-4 mb-3">
                         <p class="show-card-text preserve-space"><%= photo.description %></p>
-                        <a href="/" class="btn show-card-button">Back To Home</a>
+                        <a href="/photography" class="btn show-card-button">Back to Photography</a>
+                        <a href="/" class="btn show-card-button">Back to Home</a>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="col-lg col-md">
         </div>
+
     </div>
+
 </section>
 
 <% include ../partials/footer.ejs %>

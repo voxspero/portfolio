@@ -1,5 +1,45 @@
 <% include ../partials/header.ejs %>
 
-<h1>WEBAPP SHOW</h1>
+<section class="content">
+
+    <div class="d-flex justify-content-center align-items-center show-image-container">
+        <a class="show-image-link" href="<%= webapp.path[0] %>" style="background-image: url('<%= webapp.path[0] %>');">
+            <img class="show-image" src="<%= webapp.path[0] %>">
+        </a>
+    </div>
+
+    <div class="row mx-0">
+
+        <div class="col-lg col-md">
+        </div>
+
+        <div class="col-lg-10 col-md-10">
+            <div class="d-flex flex-column align-items-center">
+                <div class="card show-card my-5">
+                    <h5 class="card-header d-flex align-items-center justify-content-between show-card-title"><%= webapp.title %><span class="card-text show-card-year"><%= webapp.year %></span></h5>
+                    <div class="card-body">
+                        <h4 class="card-title">Technology Utilized: </h4>
+                        <ul>    
+                            <% webapp.tech.forEach(function(tech){ %>
+                                <li><%= tech %></li>
+                            <% }); %>
+                        </ul>
+                        <hr class="my-4">
+                        <h4 class="card-title">Github: </h4><a class="show-card-link" href="<%= webapp.github %>" style="padding-left: 1.75rem;"><%= webapp.github %></a>
+                        <hr class="mt-4 mb-3">
+                        <p class="show-card-text preserve-space"><%= webapp.description %></p>
+                        <a href="/webapps" class="btn show-card-button">Back to Web Apps</a>
+                        <a href="/" class="btn show-card-button">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg col-md">
+        </div>
+
+    </div>
+
+</section>
 
 <% include ../partials/footer.ejs %>

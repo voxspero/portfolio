@@ -1,17 +1,17 @@
-var mongoose    = require("mongoose");
+const   mongoose    = require("mongoose");
 
-var PhotoSchema = new mongoose.Schema({
-    path: [],
-    created: {
-        type: Date,
-        default: Date.now
-    },
-    title: String,
-    description: String,
-    media: String,
-    year: Number
-});
+const   PhotoSchema = new mongoose.Schema({
+                        path: [],
+                        created: {
+                            type: Date,
+                            default: Date.now
+                        },
+                        title: String,
+                        description: String,
+                        camera: String,
+                        year: Number
+                    });
 
-var Photo = mongoose.model("Photo", PhotoSchema);
+const   Photo       = mongoose.model("Photo", PhotoSchema);
 
-module.exports = mongoose.model("Photo", PhotoSchema);
+module.exports      = mongoose.model("Photo", PhotoSchema);

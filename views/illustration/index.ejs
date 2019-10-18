@@ -7,7 +7,7 @@
             <div class="d-flex row justify-content-center pt-3">
                 <% illustrations.forEach(function(illustration){ %>
                     <div class="card index-card my-3 mx-3">
-                        <a class="card-img-top index-img" href="/images/<%= illustration._id %>" style="background-image: url('<%= illustration.path %>');"></a>
+                        <a class="card-img-top index-img" href="/illustration/<%= illustration._id %>" style="background-image: url('<%= illustration.path %>');"></a>
                         <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= illustration.title %><span class="card-text index-card-year"><%= illustration.year %></span></h5>
                         <div class="card-body">
                             
@@ -21,6 +21,7 @@
                     </div>
                 <% }); %>
             </div>
+            <div class="index-padding-bottom"></div>
         </div>
         <div class="col-lg col-md d-sm-none"></div>
     </div>

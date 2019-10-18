@@ -1,5 +1,43 @@
 <% include ../partials/header.ejs %>
 
-<h1>ILLUSTRATION SHOW</h1>
+<section class="content">
+
+    <div class="d-flex justify-content-center align-items-center show-image-container">
+        <a class="show-image-link" href="<%= illustration.path %>" style="background-image: url('<%= illustration.path %>');">
+            <img class="show-image" src="<%= illustration.path %>">
+        </a>
+    </div>
+
+    <div class="row mx-0">
+
+        <div class="col-lg col-md">
+        </div>
+
+        <div class="col-lg-10 col-md-10">
+            <div class="d-flex flex-column align-items-center">
+                <div class="card show-card my-5">
+                    <h5 class="card-header d-flex align-items-center justify-content-between show-card-title"><%= illustration.title %><span class="card-text show-card-year"><%= illustration.year %></span></h5>
+                    <div class="card-body">
+                        <h4 class="card-title">Programs/Media Used:</h4>
+                        <ul>    
+                            <% illustration.media.forEach(function(media){ %>
+                                <li><%= media %></li>
+                            <% }); %>
+                        </ul>
+                        <hr class="mt-4 mb-3">
+                        <p class="show-card-text preserve-space"><%= illustration.description %></p>
+                        <a href="/illustration" class="btn show-card-button">Back to Illustration</a>
+                        <a href="/" class="btn show-card-button">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg col-md">
+        </div>
+
+    </div>
+    
+</section>
 
 <% include ../partials/footer.ejs %>

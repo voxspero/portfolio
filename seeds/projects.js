@@ -7,7 +7,9 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -16,7 +18,9 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -25,7 +29,9 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -34,16 +40,20 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
         path: [
-                "../img/projects/bnb-schedule.png"
+                "../img/projects/bnb-schedule.jpg"
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -52,7 +62,9 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -61,7 +73,9 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -70,7 +84,9 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -86,7 +102,9 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -97,7 +115,9 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -108,25 +128,31 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Photoshop"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     },
+    // {
+    //     path: [
+    //             "../img/projects/levelupredux.png"
+    //     ],
+    //     title: seedFunction.toTitleCase(faker.lorem.words()),
+    //     description: faker.lorem.paragraphs(),
+    //     media: [
+    //         "Adobe Illustrator"
+    //     ],
+    //     year: seedFunction.getRndInteger(2012, 2019)
+    // },
     {
         path: [
-                "../img/projects/levelupredux.png"
+                "../img/projects/sadboys.jpg"
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
-        year: seedFunction.getRndInteger(2012, 2019)
-    },
-    {
-        path: [
-                "../img/projects/sadboys.png"
+        media: [
+            "Adobe Illustrator"
         ],
-        title: seedFunction.toTitleCase(faker.lorem.words()),
-        description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
         year: seedFunction.getRndInteger(2012, 2019)
     },
     {
@@ -136,7 +162,10 @@ const   faker        = require("faker"),
         ],
         title: seedFunction.toTitleCase(faker.lorem.words()),
         description: faker.lorem.paragraphs(),
-        media: "Adobe Illustrator",
+        media: [
+            "Adobe Illustrator",
+            "Adobe Photoshop"
+        ],
         year: seedFunction.getRndInteger(2012, 2019)
     }
 ];
