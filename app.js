@@ -20,7 +20,7 @@ const   express             = require("express"),
                                 useUnifiedTopology: true,
                                 useFindAndModify: false
                             },
-        dbUrl               = "mongodb://localhost/portfolio";
+        dbUrl               = process.env.DATABASEURL || "mongodb://localhost/portfolio";
 
 // ROUTES
 
