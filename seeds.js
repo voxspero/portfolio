@@ -33,15 +33,24 @@ function seedDB(){
 			console.log(err);
 		}
         console.log("removed images!");
-        digital.forEach(function(seed){
-            Image.create(seed, function(err, image){
+        // digital.forEach(function(seed){
+        //     Image.create(seed, function(err, image){
+        //         if(err){
+        //             console.log(err)
+        //         } else {
+        //             console.log("added an image!");
+        //         }
+        //     });
+        // });
+        for(i = 0; i < digital.length; i++) {
+            Image.create(digital[i], function(err){
                 if(err){
                     console.log(err)
                 } else {
                     console.log("added an image!");
                 }
             });
-        });
+        }
     });
 
     // SEED ILLUSTRATION
@@ -50,15 +59,24 @@ function seedDB(){
 			console.log(err);
 		}
         console.log("removed illustrations!");
-        illustration.forEach(function(seed){
-            Illustration.create(seed, function(err, illustration){
+        // illustration.forEach(function(seed){
+        //     Illustration.create(seed, function(err, illustration){
+        //         if(err){
+        //             console.log(err)
+        //         } else {
+        //             console.log("added an illustration!");
+        //         }
+        //     });
+        // });
+        for(i = 0; i < illustration.length; i++) {
+            Illustration.create(illustration[i], function(err){
                 if(err){
                     console.log(err)
                 } else {
                     console.log("added an illustration!");
                 }
             });
-        });
+        }
     });
     
     // SEED PHOTOGRAPHY
@@ -67,15 +85,24 @@ function seedDB(){
 			console.log(err);
 		}
         console.log("removed photos!");
-        photography.forEach(function(seed){
-            Photo.create(seed, function(err, photo){
+        // photography.forEach(function(seed){
+        //     Photo.create(seed, function(err, photo){
+        //         if(err){
+        //             console.log(err)
+        //         } else {
+        //             console.log("added a photo!");
+        //         }
+        //     });
+        // });
+        for(i = 0; i < photography.length; i++) {
+            Photo.create(photography[i], function(err){
                 if(err){
                     console.log(err)
                 } else {
                     console.log("added a photo!");
                 }
             });
-        });
+        }
     });
     
     // SEED PROJECTS
@@ -84,15 +111,24 @@ function seedDB(){
 			console.log(err);
 		}
         console.log("removed projects!");
-        projects.forEach(function(seed){
-            Project.create(seed, function(err, image){
+        // projects.forEach(function(seed){
+        //     Project.create(seed, function(err, image){
+        //         if(err){
+        //             console.log(err)
+        //         } else {
+        //             console.log("added a project!");
+        //         }
+        //     });
+        // });
+        for(i = 0; i < projects.length; i++) {
+            Project.create(projects[i], function(err){
                 if(err){
                     console.log(err)
                 } else {
                     console.log("added a project!");
                 }
             });
-        });
+        }
     });
 
     // SEED WEBAPPS
@@ -101,15 +137,24 @@ function seedDB(){
 			console.log(err);
 		}
         console.log("removed webapps!");
-        webapps.forEach(function(seed){
-            WebApp.create(seed, function(err, webapp){
+        // webapps.forEach(function(seed){
+        //     WebApp.create(seed, function(err, webapp){
+        //         if(err){
+        //             console.log(err)
+        //         } else {
+        //             console.log("added a webapp!");
+        //         }
+        //     });
+        // });
+        for(i = 0; i < webapps.length; i++) {
+            WebApp.create(webapps[i], function(err){
                 if(err){
                     console.log(err)
                 } else {
-                    console.log("added a webapp!");
+                    console.log("added a web app!");
                 }
             });
-        });
+        }
     });
 }
 
