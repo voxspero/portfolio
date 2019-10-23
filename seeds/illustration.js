@@ -14,7 +14,7 @@ const   faker        = require("faker"),
     {
         path: "../img/illustration/baddies.png",
         title: "'BADDIES' Logotype",
-        description: "A logo I created as a reflection of my vibrant group of cherished friends. \"Baddies\" is what we call ourselves. (The joke is we are bad at video games.) \n I had a flag made of this logo; it hangs proudly in the dining area of our kitchen.",
+        description: "A logo I created as a reflection of my vibrant group of cherished friends. \"Baddies\" is what we call ourselves. (The joke is we are bad at video games.) \n\nI had a flag made of this logo; it hangs proudly in the dining area of our kitchen.",
         media: [
             "Adobe Illustrator"
         ],
