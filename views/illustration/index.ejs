@@ -8,11 +8,14 @@
                 <% illustrations.forEach(function(illustration){ %>
                     <div class="card index-card my-3 mx-3">
                         <a class="card-img-top index-img" href="/illustration/<%= illustration._id %>" style="background-image: url('<%= illustration.path %>');"></a>
+                    <% if(illustration.title.length > 75) { %>    
+                        <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= illustration.title.substring(0, 75) %><span class="card-text index-card-year"><%= illustration.year %></span></h5>
+                    <% } else { %>
                         <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= illustration.title %><span class="card-text index-card-year"><%= illustration.year %></span></h5>
-                        <div class="card-body">
-                            
-                            <% if(illustration.description.length > 175) { %>    
-                                <p class="card-text"><%= illustration.description.substring(0, 175) %><span class="ellipsis">  .  .  .  </span></p>
+                    <% } %>                        
+                        <div class="card-body">  
+                            <% if(illustration.description.length > 155) { %>    
+                                <p class="card-text"><%= illustration.description.substring(0, 155) %><span class="ellipsis">  .  .  .  </span></p>
                             <% } else { %>
                                 <p class="card-text"><%= illustration.description %></p>
                             <% } %>

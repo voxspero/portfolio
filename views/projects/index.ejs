@@ -12,11 +12,14 @@
                 <% projects.forEach(function(project){ %>
                     <div class="card index-card my-3 mx-3">
                         <a class="card-img-top index-img" href="/projects/<%= project._id %>" style="background-image: url('<%= project.path[0] %>');"></a>
-                        <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= project.title %><span class="card-text index-card-year"><%= project.year %></span></h5>
-                        <div class="card-body">
-                            
-                            <% if(project.description.length > 175) { %>    
-                                <p class="card-text"><%= project.description.substring(0, 175) %><span class="ellipsis">  .  .  .  </span></p>
+                        <% if(project.title.length > 75) { %>    
+                            <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= project.title.substring(0, 75) %><span class="card-text index-card-year"><%= project.year %></span></h5>
+                        <% } else { %>
+                            <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= project.title %><span class="card-text index-card-year"><%= project.year %></span></h5>
+                        <% } %>                          
+                        <div class="card-body">   
+                            <% if(project.description.length > 155) { %>    
+                                <p class="card-text"><%= project.description.substring(0, 155) %><span class="ellipsis">  .  .  .  </span></p>
                             <% } else { %>
                                 <p class="card-text"><%= project.description %></p>
                             <% } %>

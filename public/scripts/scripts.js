@@ -17,8 +17,8 @@ var navbar = document.getElementById("navbar");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-console.log(sticky);
-console.log(navbar);
+// console.log(sticky);
+// console.log(navbar);
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyTop() {
@@ -29,6 +29,31 @@ function stickyTop() {
         navbar.classList.remove("sticky");
     }
 } 
+
+if(document.URL.indexOf("/projects") >= 0){
+    var element = document.getElementById("navProjectBorder");
+    element.classList.add("nav-link-border-active");
+}
+
+if(document.URL.indexOf("/illustration") >= 0){
+    var element = document.getElementById("navIllustrationBorder");
+    element.classList.add("nav-link-border-active");
+}
+
+if(document.URL.indexOf("/photography") >= 0){
+    var element = document.getElementById("navPhotographyBorder");
+    element.classList.add("nav-link-border-active");
+}
+
+if(document.URL.indexOf("/webapps") >= 0){
+    var element = document.getElementById("navWebAppBorder");
+    element.classList.add("nav-link-border-active");
+}
+
+if(document.URL.indexOf("/digital") >= 0){
+    var element = document.getElementById("navDigitalBorder");
+    element.classList.add("nav-link-border-active");
+}
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -58,3 +83,4 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 } 
+

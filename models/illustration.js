@@ -9,7 +9,7 @@ var IllustrationSchema = new mongoose.Schema({
     title: String,
     description: String,
     media: [],
-    year: Number
+    year: String
 });
 
 var Illustration = mongoose.model("Illustration", IllustrationSchema);

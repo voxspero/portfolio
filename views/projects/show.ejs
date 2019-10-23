@@ -3,17 +3,22 @@
 <section class="content">
 
     <div class="d-flex justify-content-center align-items-center show-image-container">
-        <% project.path.forEach(function(path){ %>
-            <div class="mySlides">
-                <a class="show-image-link" href="<%= path %>" style="background-image: url('<%= path %>');">
-                    <div class="numbertext"><%= (project.path.indexOf(path) + 1) %> / <%= project.path.length %></div>
-                    <img class="show-image" src="<%= path %>">
-                </a>
-            </div>
-        <% }); %>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <% if(project.path.length < 2) { %>
+            <a class="show-image-link" href="<%= project.path[0] %>" style="background-image: url('<%= project.path[0] %>');">
+                <img class="show-image" src="<%= project.path[0] %>">
+            </a>
+        <% } else { %>
+            <% project.path.forEach(function(path){ %>
+                <div class="mySlides">
+                    <a class="show-image-link" href="<%= path %>" style="background-image: url('<%= path %>');">
+                        <div class="numbertext"><%= (project.path.indexOf(path) + 1) %> / <%= project.path.length %></div>
+                        <img class="show-image" src="<%= path %>">
+                    </a>
+                </div>
+            <% }); %>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <% } %>
     </div>
         
     <div class="row mx-0">
@@ -23,11 +28,15 @@
 
         <div class="col-lg-10 col-md-10">
             <div class="d-flex flex-column align-items-center">
-                <div style="text-align: center; line-height: 0;">
-                    <% for(i = 0; i < project.path.length; i++){ %>
-                        <span class="dot" onclick="currentSlide(<%= (i + 1) %>)"></span> 
-                    <% }; %>
-                </div>
+                <% if(project.path.length < 2) { %>
+                    <div class="mt-5"></div>
+                <% } else { %>
+                    <div style="text-align: center; line-height: 0;">
+                        <% for(i = 0; i < project.path.length; i++){ %>
+                            <span class="dot" onclick="currentSlide(<%= (i + 1) %>)"></span> 
+                        <% }; %>
+                    </div>
+                <% } %>
                 <div class="card show-card mb-5">
                     <h5 class="card-header d-flex align-items-center justify-content-between show-card-title"><%= project.title %><span class="card-text show-card-year"><%= project.year %></span></h5>
                     <div class="card-body">
@@ -39,8 +48,10 @@
                         </ul>
                         <hr class="mt-4 mb-3">
                         <p class="show-card-text preserve-space"><%= project.description %></p>
-                        <a href="/projects" class="btn show-card-button">Back to Projects</a>
-                        <a href="/" class="btn show-card-button">Back to Home</a>
+                        <div class="d-flex justify-content-around mb-2">
+                            <a href="/projects" class="btn show-card-button">Back to Projects</a>
+                            <a href="/" class="btn show-card-button">Back to Home</a>
+                        </div>
                     </div>
                 </div>
             </div>

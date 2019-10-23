@@ -10,7 +10,7 @@ var WebAppSchema = new mongoose.Schema({
     description: String,
     tech: [],
     github: String,
-    year: Number
+    year: String
 });
 
 var WebApp = mongoose.model("WebApp", WebAppSchema);

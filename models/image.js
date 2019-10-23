@@ -9,7 +9,7 @@ var ImageSchema = new mongoose.Schema({
     title: String,
     description: String,
     media: [],
-    year: Number
+    year: String
 });
 
 var Image = mongoose.model("Image", ImageSchema);
