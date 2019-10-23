@@ -5,11 +5,20 @@ const   faker        = require("faker"),
         path: "../img/digital/beneath.png",
         title: "Look Beneath",
         // seedFunction.toTitleCase(faker.lorem.words()),
-        description: "A cover for a fictional album called \"Look Beneath\" by an unnamed fictional artist. A very fun afternoon project in Photoshop.",
+        description: "A cover for a fictional album called \"Look Beneath\" by an unnamed fictional artist. A very fun afternoon project in Photoshop. It began as a triangle with two shadows, and evolved into a crazy piece with water and colors and even more lights.",
         media: [
             "Adobe Photoshop"
         ],
         year: "2018"
+    },
+    {
+        path: "../img/digital/zotac142.png",
+        title: "ZOTAC Sunday Duel Cup #142",
+        description: "ZOTAC is a PC and PC hardware company who sponsored several years of Sunday Duel Cups, with a prize pool, for the Quake Live (an Arena First Person Shooter game) community. Level Up TV covered a great deal of these cups over the years; our archived videos reach all the way back to cup #67 at least. I love how the sign turned out, and this was a format I could easily update for subsequent weeks by just changing the number in the Photoshop file and tweaking its position.",
+        media: [
+            "Adobe Photoshop"
+        ],
+        year: "2012"
     },
     {
         path: "../img/digital/cb-ec-gf.png",
@@ -86,7 +95,7 @@ const   faker        = require("faker"),
     {
         path: "../img/digital/tdmpickup-playmore.png",
         title: "#TDMPICKUP - Play More TDM",
-        description: "This was a holding screen we would show on the live video feed during breaks in content, accompanied by music.",
+        description: "This was a holding screen we would show on the live video feed during breaks in #TDMPICKUP related content, accompanied by music. The image is a screenshot from in-game Quake Live touched up and detailed in Photoshop.",
         media: [
             "Adobe Photoshop"
         ],
@@ -95,7 +104,7 @@ const   faker        = require("faker"),
     {
         path: "../img/digital/tdmpickup-playmore-2.png",
         title: "#TDMPICKUP - Play More TDM #2",
-        description: "This was a holding screen we would show on the live video feed during breaks in content, accompanied by music.",
+        description: "This was a holding screen we would show on the live video feed during breaks in #TDMPICKUP related content, accompanied by music. The image is a screenshot from in-game Quake Live touched up and detailed in Photoshop.",
         media: [
             "Adobe Photoshop"
         ],

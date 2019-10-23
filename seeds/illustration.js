@@ -32,7 +32,7 @@ const   faker        = require("faker"),
     {
         path: "../img/illustration/hipster-doofus.png",
         title: "Hipster Doofus",
-        description: "A cover for a fictional album called \"Hipster Doofus\" by a fictional artist named \"Phlegm\". Just for fun.",
+        description: "A cover for a fictional album called \"Hipster Doofus\" by a fictional artist named \"Phlegm\". Just for fun. I use this image minus the text as my profile picture for Twitter, Twitch, and Discord and has sort of become a logo of mine. I consider it a representation of how things that are different can come together in harmony.",
         media: [
             "Adobe Illustrator"
         ],
@@ -42,16 +42,25 @@ const   faker        = require("faker"),
         path: "../img/illustration/abstract-1.png",
         title: "Abstract #1",
         // seedFunction.toTitleCase(faker.lorem.words()),
-        description: "An abstract experiment of shape and color that was made to resemble a polygonal eyeball but also appear emblematic.",
+        description: "An abstract experiment of shape and color that was made to resemble a polygonal eyeball but also appear emblematic. I hope to eventually use this for something or elaborate upon it.",
         media: [
             "Adobe Illustrator"
         ],
         year: "2018"
     },
     {
+        path: "../img/illustration/abstract-2.png",
+        title: "Abstract #2",
+        description: "An experiment with a psychedlic palette of colors, incorporating inspirations from fantasy books and games. It has turned out especially wild so far, and is something I plan to add more details to over time.",
+        media: [
+            "Adobe Illustrator"
+        ],
+        year: "2019"
+    },
+    {
         path: "../img/illustration/bk.png",
         title: "Bone King",
-        description: "A goofy illustration/doodle where I wanted to make a line drawing with bright colors.",
+        description: "A goofy illustration/doodle where I wanted to make a line drawing with bright colors. Added a cute little skull to the crown, reminiscent of something out of Adventure Time.",
         media: [
             "Adobe Illustrator"
         ],
@@ -69,7 +78,7 @@ const   faker        = require("faker"),
     {
         path: "../img/illustration/midair.png",
         title: "MID-AIR Emote",
-        description: "An emote I made for a professional Quake player's Twitch channel. Based off the Mid-Air medal reward in Quake Champions, for striking an airborne opponent and slaying them with a single rocket.",
+        description: "An emote I made for GaRpY, a professional Quake player, to use on his Twitch channel. The design is based off of the Mid-Air medal reward in Quake Champions, which is awarded for striking an airborne opponent and slaying them with a single rocket.",
         media: [
             "Adobe Illustrator"
         ],
@@ -78,7 +87,7 @@ const   faker        = require("faker"),
     {
         path: "../img/illustration/cronoburp.png",
         title: "Crono Soda Chug Emote",
-        description: "An emote I made for my personal Twitch channel. It features Crono, from Chrono Trigger, struggling to win the Soda Chug.",
+        description: "An emote I made for my personal Twitch channel. It features a Crono, from Chrono Trigger, struggling to win the Soda Chug. It may have been subconsciously influenced by the fact that Akira Toriyama (creator of Dragon Ball) did the character design for Chrono Trigger, but many have told me that it is a decent imitation of one of his styles of drawing characters. \n\nThe emote sizes for Twitch are 112x112 pixels, 56x56 pixels, and 28x28 pixels, and the vast majority of the time they are displayed at 28x28 pixels on PC. This is only slightly larger than the favicon next to the page name in your browser window! Mobile uses the slightly higher resolution versions, but still displays relatively tiny. This becomes an interesting puzzle when translating a larger drawing to such a small, pixelated canvas. One thing going for someone creating for this size is that the drawing can remain fairly rough.",
         media: [
             "Adobe Illustrator"
         ],
@@ -87,7 +96,7 @@ const   faker        = require("faker"),
     {
         path: "../img/illustration/terrayaya.png",
         title: "Terra AYAYA Emote",
-        description: "An emote I made for my personal Twitch channel. It features Terra, from Final Fantasy 6, in a format derivate of a popular emote called AYAYA, which features a friendly anime girl's face during an excited outburst.",
+        description: "An emote I made for my personal Twitch channel. It features Terra, from Final Fantasy 6, in a format derivate of a popular emote called AYAYA, which features a friendly anime girl's face during an excited outburst. As with the Crono drawing, this was destined to be displayed at 28x28 pixels.",
         media: [
             "Adobe Illustrator"
         ],
@@ -96,7 +105,7 @@ const   faker        = require("faker"),
     {
         path: "../img/illustration/kirby.png",
         title: "Kirby! (Nintendo)",
-        description: "An illustration of Kirby that I made to experiment with chromatic effects.",
+        description: "An illustration of Kirby that I made to experiment with chromatic effects. Kirby loves to eat, constantly, so of course he is chasing food!",
         media: [
             "Adobe Illustrator"
         ],
