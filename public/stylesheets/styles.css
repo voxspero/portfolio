@@ -435,11 +435,11 @@ footer {
     color: rgb(255, 248, 220);
 }
 
-@media only screen and (max-width: 1176px) {
+/* @media only screen and (max-width: 1176px) {
     .index-card {
         width: 25%;
     }
-}
+} */
 
 .index-card-title {
     font-family: 'Barlow';
