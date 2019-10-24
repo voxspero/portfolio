@@ -169,6 +169,7 @@ const   faker        = require("faker"),
         path: [
                 "../img/projects/bnb-schedule.jpg"
         ],
+        thumbnail: "../img/thumbnails/projects/bnb-schedule-thumb.jpg",
         title: "UMBC SEB Breakfast & Bingo Posters",
         description: "The semester schedule for the Student Events Board's \"Breakfast & Bingo\" in Spring 2014 at UMBC, for posting around campus. As you would expect, you play bingo, and breakfast is available. Food was catered by the campus kitchen, and included cold and hot breakfast foods of all kinds, and a waffle bar. \n \nFun Fact: There are several occasions when Breakfast & Bingo took place in the evening; however, breakfast was always served!",
         media: [
@@ -183,6 +184,7 @@ const   faker        = require("faker"),
                 "../img/projects/axiom-lower.png",
                 "../img/projects/axiom-upper.png"
         ],
+        thumbnail: "../img/thumbnails/projects/axiom-thumb.jpg",
         title: "Axiom Typeface",
         // seedFunction.toTitleCase(faker.lorem.words()),
         description: "Axiom is a Slab Serif typeface I developed for one of my courses during school. Obvious influences include Rockwell and Memphis. Every letter was designed on graph paper.",
@@ -198,6 +200,7 @@ const   faker        = require("faker"),
                 "../img/projects/icebox-2.png",
                 "../img/projects/icebox-3.png"
         ],
+        thumbnail: "../img/thumbnails/projects/icebox-thumb.jpg",
         title: "Icebox Website Concepts",
         description: "One of three website mock-ups I made for a Graphic Design course in college. The website was a site for livestreaming video game tournaments (also known as e-sports), that I actually made into a reality later on and operated from 2012-2013. The live website ended up being a video player centered in the viewport with an icy border and a flashy backdrop and a twitter feed underneath. I incorporated the corner tabs idea seen in the first image as links to Twitch, Quake Live, etc on the live website. The files for the live website, however, are lost to an old hard drive. R.I.P.",
         media: [

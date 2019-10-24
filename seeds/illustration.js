@@ -103,7 +103,7 @@ const   faker        = require("faker"),
         path: [
             "../img/illustration/midair.png"
         ],
-        thumbnail: "../img/thumbnails/illustration/midair-thumb.jpg",
+        thumbnail: "../img/thumbnails/illustration/midair-thumb.png",
         title: "MID-AIR Emote",
         description: "An emote I made for GaRpY, a professional Quake player, to use on his Twitch channel. The design is based off of the Mid-Air medal reward in Quake Champions, which is awarded for striking an airborne opponent and slaying them with a single rocket.",
         media: [
@@ -115,7 +115,7 @@ const   faker        = require("faker"),
         path: [
             "../img/illustration/cronoburp.png"
         ],
-        thumbnail: "../img/thumbnails/illustration/cronoburp-thumb.jpg",
+        thumbnail: "../img/thumbnails/illustration/cronoburp-thumb.png",
         title: "Crono Soda Chug Emote",
         description: "An emote I made for my personal Twitch channel. It features a Crono, from Chrono Trigger, struggling to win the Soda Chug. It may have been subconsciously influenced by the fact that Akira Toriyama (creator of Dragon Ball) did the character design for Chrono Trigger, but many have told me that it is a decent imitation of one of his styles of drawing characters. \n\nThe emote sizes for Twitch are 112x112 pixels, 56x56 pixels, and 28x28 pixels, and the vast majority of the time they are displayed at 28x28 pixels on PC. This is only slightly larger than the favicon next to the page name in your browser window! Mobile uses the slightly higher resolution versions, but still displays relatively tiny. This becomes an interesting puzzle when translating a larger drawing to such a small, pixelated canvas. One thing going for someone creating for this size is that the drawing can remain fairly rough.",
         media: [
@@ -127,7 +127,7 @@ const   faker        = require("faker"),
         path: [
             "../img/illustration/terrayaya.png"
         ],
-        thumbnail: "../img/thumbnails/illustration/terrayaya-thumb.jpg",
+        thumbnail: "../img/thumbnails/illustration/terrayaya-thumb.png",
         title: "Terra AYAYA Emote",
         description: "An emote I made for my personal Twitch channel. It features Terra, from Final Fantasy 6, in a format derivate of a popular emote called AYAYA, which features a friendly anime girl's face during an excited outburst. As with the Crono drawing, this was destined to be displayed at 28x28 pixels.",
         media: [
@@ -187,7 +187,7 @@ const   faker        = require("faker"),
         path: [
             "../img/illustration/junk-food-2liter.png"
         ],
-        thumbnail: "../img/thumbnails/illustration/junk-food-2liter-thumb.jpg",
+        thumbnail: "../img/thumbnails/illustration/junk-food-2liter-thumb.png",
         title: "A 2-Liter Bottle Of Soda",
         description: "A doodle of a 2-Liter bottle of soda with vague branding inspired by Mountain Dew and Surge. There is really not much more to it!",
         media: [
