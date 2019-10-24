@@ -2,6 +2,7 @@ var mongoose    = require("mongoose");
 
 var ProjectSchema = new mongoose.Schema({
     path: [],
+    thumbnail: String,
     created: {
         type: Date,
         default: Date.now

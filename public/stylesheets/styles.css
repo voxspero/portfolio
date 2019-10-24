@@ -752,15 +752,23 @@ footer {
 .landing-wrapper {
     background-color: rgb(10, 14, 20);
     height: auto;
+    width: 100%;
     background-image: url("../img/site/landing-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .landing-darken-bg {
     background-color: rgba(10, 14, 20, 0.9);
     box-shadow: inset 0 0 100px 100px rgba(10, 14, 20, 0.50);
+}
+
+.landing-row {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 /* .landing-top-stripes {

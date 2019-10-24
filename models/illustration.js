@@ -1,7 +1,8 @@
 var mongoose    = require("mongoose");
 
 var IllustrationSchema = new mongoose.Schema({
-    path: String,
+    path: [],
+    thumbnail: String,
     created: {
         type: Date,
         default: Date.now

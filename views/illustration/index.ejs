@@ -7,7 +7,7 @@
             <div class="d-flex row justify-content-center pt-3">
                 <% illustrations.forEach(function(illustration){ %>
                     <div class="card index-card my-3 mx-3">
-                        <a class="card-img-top index-img" href="/illustration/<%= illustration._id %>" style="background-image: url('<%= illustration.path %>');"></a>
+                        <a class="card-img-top index-img" href="/illustration/<%= illustration._id %>" style="background-image: url('<%= illustration.thumbnail %>');"></a>
                     <% if(illustration.title.length > 75) { %>    
                         <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= illustration.title.substring(0, 75) %><span class="card-text index-card-year"><%= illustration.year %></span></h5>
                     <% } else { %>
