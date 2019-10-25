@@ -31,28 +31,38 @@ function stickyTop() {
 } 
 
 if(document.URL.indexOf("/projects") >= 0){
-    var element = document.getElementById("navProjectBorder");
-    element.classList.add("nav-link-border-active");
+    var navlink = document.getElementById("navProjectBorder");
+    navlink.classList.add("nav-link-border-active");
+    var footerlink = document.getElementById("footerProjectLink");
+    footerlink.classList.add("footer-link-active");
 }
 
 if(document.URL.indexOf("/illustration") >= 0){
-    var element = document.getElementById("navIllustrationBorder");
-    element.classList.add("nav-link-border-active");
+    var navlink = document.getElementById("navIllustrationBorder");
+    navlink.classList.add("nav-link-border-active");
+    var footerlink = document.getElementById("footerIllustrationLink");
+    footerlink.classList.add("footer-link-active");
 }
 
 if(document.URL.indexOf("/photography") >= 0){
-    var element = document.getElementById("navPhotographyBorder");
-    element.classList.add("nav-link-border-active");
+    var navlink = document.getElementById("navPhotographyBorder");
+    navlink.classList.add("nav-link-border-active");
+    var footerlink = document.getElementById("footerPhotographyLink");
+    footerlink.classList.add("footer-link-active");
 }
 
 if(document.URL.indexOf("/webapps") >= 0){
-    var element = document.getElementById("navWebAppBorder");
-    element.classList.add("nav-link-border-active");
+    var navlink = document.getElementById("navWebAppBorder");
+    navlink.classList.add("nav-link-border-active");
+    var footerlink = document.getElementById("footerWebAppLink");
+    footerlink.classList.add("footer-link-active");
 }
 
 if(document.URL.indexOf("/digital") >= 0){
-    var element = document.getElementById("navDigitalBorder");
-    element.classList.add("nav-link-border-active");
+    var navlink = document.getElementById("navDigitalBorder");
+    navlink.classList.add("nav-link-border-active");
+    var footerlink = document.getElementById("footerDigitalLink");
+    footerlink.classList.add("footer-link-active");
 }
 
 var slideIndex = 1;

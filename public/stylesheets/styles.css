@@ -334,7 +334,7 @@ footer {
     text-decoration: none;
 }
 
-.footer-login-link {
+/* .footer-login-link {
     color: rgb(134, 37, 32);
 }
 
@@ -344,7 +344,7 @@ footer {
 
 .footer-login-link:focus {
     color: rgb(250, 66, 56);
-}
+} */
 
 .footer-copyright {
     color: rgb(62, 71, 100);
@@ -362,6 +362,10 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.footer-link-active {
+    color: rgb(250, 66, 56); 
 }
 
 /* CARD */
