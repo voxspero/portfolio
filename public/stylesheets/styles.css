@@ -468,18 +468,17 @@ footer {
     width: 100%;
     color: rgb(248, 224, 80); 
     border-color: rgb(58, 190, 167);
+    font-weight: bold;
 }
 
 .index-card-button:hover {
     color: rgb(255, 248, 220);
     border-color: rgb(58, 190, 167); 
     background-color: rgb(58, 190, 167); 
-    font-weight: bold; 
 }
 
 .index-card-button:focus, .index-card-button.focus {
-    box-shadow: 0 0 0 0.2rem rgba(250, 66, 56, 0.5);
-    font-weight: bold; 
+    box-shadow: 0 0 0 0.2rem rgba(250, 66, 56, 0.5); 
 }
 
 .index-card-year {
@@ -491,6 +490,27 @@ footer {
     margin-top: 0.05rem;
     margin-left: 1rem;
     font-size: 18px;
+}
+
+.index-home-button {
+    color: rgb(248, 224, 80); 
+    border-color: rgb(58, 190, 167);
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.index-home-button:hover {
+    color: rgb(255, 248, 220);
+    border-color: rgb(58, 190, 167); 
+    background-color: rgb(58, 190, 167); 
+    font-weight: bold; 
+}
+
+.index-home-button:focus, .index-home-button.focus {
+    box-shadow: 0 0 0 0.2rem rgba(250, 66, 56, 0.5);
+    font-weight: bold; 
 }
 
 .index-padding-bottom {
