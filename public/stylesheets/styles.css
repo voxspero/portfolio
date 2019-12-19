@@ -846,7 +846,7 @@ footer {
 }
 
 .landing-welcome-v-rule-right-outer {
-    border-left: 0.15rem solid rgba(248, 224, 80, 0.5);
+    border-left: 0.15rem solid rgba(248, 224, 80, 0.75);
     height: 24rem;
     margin-left: 0.15rem;
 }
