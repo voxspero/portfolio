@@ -1,5 +1,7 @@
 // {} - REQUIREMENTS / DECLARATIONS
 
+require('dotenv').config();
+
 const   express             = require("express"),
         app                 = express(),
         session             = require("express-session"),
