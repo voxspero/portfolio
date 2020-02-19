@@ -1,18 +1,18 @@
-const express       = require("express"),
-      router        = express.Router(),
-      Photo         = require("../models/photo"),
-      middleware    = require("../middleware");
+const express = require('express'),
+	router = express.Router(),
+	Photo = require('../models/photo'),
+	middleware = require('../middleware');
 
 // 1 - INDEX
 
-router.get("/", function(req, res){
-    Photo.find({}, function(err, photos){
-        if(err){
-            console.log(err);   
-        } else {
-            res.render("photography/index", { photos: photos });
-        }
-    });
+router.get('/', function(req, res) {
+	Photo.find({}, function(err, photos) {
+		if (err) {
+			console.log(err);
+		} else {
+			res.render('photography/index', { photos: photos });
+		}
+	}).sort({ year: 'desc' });
 });
 
 // router.get("/", function(req, res){
@@ -29,12 +29,12 @@ router.get("/", function(req, res){
 // 		year 	    = req.body.year,
 // 		newPhoto 	= {
 // 			title: title,
-// 			path: path, 
+// 			path: path,
 //             description: description,
-//             media: media, 
+//             media: media,
 // 			year: year
 // 		};
-    
+
 //     Photo.create(newPhoto, function(err, image){
 //         if(err) {
 //             console.log(err);
@@ -53,14 +53,14 @@ router.get("/", function(req, res){
 
 // 4 - SHOW
 
-router.get("/:id", function(req, res){
-    Photo.findById(req.params.id, function(err, photo){
-        if(err){
-            console.log(err);
-        } else {
-            res.render("photography/show", { photo: photo });
-        }
-    });
+router.get('/:id', function(req, res) {
+	Photo.findById(req.params.id, function(err, photo) {
+		if (err) {
+			console.log(err);
+		} else {
+			res.render('photography/show', { photo: photo });
+		}
+	});
 });
 
 // LOSE?

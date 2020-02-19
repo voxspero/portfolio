@@ -1,18 +1,18 @@
-const express       = require("express"),
-      router        = express.Router(),
-      Illustration  = require("../models/illustration"),
-      middleware    = require("../middleware");
+const express = require('express'),
+	router = express.Router(),
+	Illustration = require('../models/illustration'),
+	middleware = require('../middleware');
 
 // 1 - INDEX
 
-router.get("/", function(req, res){
-    Illustration.find({}, function(err, illustrations){
-        if(err){
-            console.log(err);   
-        } else {
-            res.render("illustration/index", { illustrations: illustrations });
-        }
-    });
+router.get('/', function(req, res) {
+	Illustration.find({}, function(err, illustrations) {
+		if (err) {
+			console.log(err);
+		} else {
+			res.render('illustration/index', { illustrations: illustrations });
+		}
+	}).sort({ year: 'desc' });
 });
 
 // router.get("/", function(req, res){
@@ -29,12 +29,12 @@ router.get("/", function(req, res){
 // 		year 	    = req.body.year,
 // 		newPhoto 	= {
 // 			title: title,
-// 			path: path, 
+// 			path: path,
 //             description: description,
-//             media: media, 
+//             media: media,
 // 			year: year
 // 		};
-    
+
 //     Photo.create(newPhoto, function(err, image){
 //         if(err) {
 //             console.log(err);
@@ -53,14 +53,14 @@ router.get("/", function(req, res){
 
 // 4 - SHOW
 
-router.get("/:id", function(req, res){
-    Illustration.findById(req.params.id, function(err, illustration){
-        if(err){
-            console.log(err);
-        } else {
-            res.render("illustration/show", { illustration: illustration });
-        }
-    });
+router.get('/:id', function(req, res) {
+	Illustration.findById(req.params.id, function(err, illustration) {
+		if (err) {
+			console.log(err);
+		} else {
+			res.render('illustration/show', { illustration: illustration });
+		}
+	});
 });
 
 // LOSE?

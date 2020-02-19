@@ -1,0 +1,36 @@
+<% include ../partials/header.ejs %>
+
+<section class="container-fluid content">
+    <div class="row justify-content-center">
+        <div class="col-lg col-md d-sm-none"></div>
+        <div class="col-lg-10 col-md col-sm">
+            <div class="d-flex row justify-content-center pt-3">
+                <% nodeprojects.forEach(function(nodeproject){ %>
+                    <div class="card index-card my-3 mx-3">
+                        <a class="card-img-top index-img" href="/nodeprojects/<%= nodeproject._id %>" style="background-image: url('<%= nodeproject.thumbnail %>');"></a>
+                        <% if(nodeproject.title.length > 75) { %>    
+                            <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= nodeproject.title.substring(0, 75) %><span class="card-text index-card-year"><%= nodeproject.year %></span></h5>
+                        <% } else { %>
+                            <h5 class="card-header d-flex index-card-title align-items-center justify-content-between"><%= nodeproject.title %><span class="card-text index-card-year"><%= nodeproject.year %></span></h5>
+                        <% } %>                          
+                        <div class="card-body"> 
+                            <% if(nodeproject.description.length > 155) { %>    
+                                <p class="card-text"><%= nodeproject.description.substring(0, 155) %><span class="ellipsis">  .  .  .  </span></p>
+                            <% } else { %>
+                                <p class="card-text"><%= nodeproject.description %></p>
+                            <% } %>
+                            <a href="/nodeprojects/<%= nodeproject._id %>" class="btn btn-sm index-card-button mt-1">View</a>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-sm index-home-button" href="/">Back To Home</a>
+            </div>
+            <div class="index-padding-bottom"></div>
+        </div>
+        <div class="col-lg col-md d-sm-none"></div>
+    </div>
+</section>
+
+<% include ../partials/footer.ejs %>

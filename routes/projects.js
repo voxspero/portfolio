@@ -1,18 +1,18 @@
-const express       = require("express"),
-      router        = express.Router(),
-      Project       = require("../models/project"),
-      middleware    = require("../middleware");
+const express = require('express'),
+	router = express.Router(),
+	Project = require('../models/project'),
+	middleware = require('../middleware');
 
 // 1 - INDEX
 
-router.get("/", function(req, res){
-    Project.find({}, function(err, projects){
-        if(err){
-            console.log(err);   
-        } else {
-            res.render("projects/index", { projects: projects });
-        }
-    });
+router.get('/', function(req, res) {
+	Project.find({}, function(err, projects) {
+		if (err) {
+			console.log(err);
+		} else {
+			res.render('projects/index', { projects: projects });
+		}
+	}).sort({ year: 'desc' });
 });
 
 // router.get("/", function(req, res){
@@ -29,12 +29,12 @@ router.get("/", function(req, res){
 // 		year 	    = req.body.year,
 // 		newPhoto 	= {
 // 			title: title,
-// 			path: path, 
+// 			path: path,
 //             description: description,
-//             media: media, 
+//             media: media,
 // 			year: year
 // 		};
-    
+
 //     Photo.create(newPhoto, function(err, image){
 //         if(err) {
 //             console.log(err);
@@ -53,14 +53,14 @@ router.get("/", function(req, res){
 
 // 4 - SHOW
 
-router.get("/:id", function(req, res){
-    Project.findById(req.params.id, function(err, project){
-        if(err){
-            console.log(err);
-        } else {
-            res.render("projects/show", { project: project });
-        }
-    });
+router.get('/:id', function(req, res) {
+	Project.findById(req.params.id, function(err, project) {
+		if (err) {
+			console.log(err);
+		} else {
+			res.render('projects/show', { project: project });
+		}
+	});
 });
 
 // LOSE?
