@@ -1,29 +1,19 @@
 const faker = require('faker'),
 	nodeprojects = [
 		{
-			path: [
-				'../img/node-projects/bookdrop-1.jpg',
-				'../img/node-projects/bookdrop-2.jpg',
-				'../img/node-projects/bookdrop-3.jpg',
-				'../img/node-projects/bookdrop-4.jpg',
-				'../img/node-projects/bookdrop-5.jpg',
-				'../img/node-projects/bookdrop-6.jpg',
-				'../img/node-projects/bookdrop-7.jpg',
-				'../img/node-projects/bookdrop-8.jpg'
-			],
-			thumbnail: '../img/thumbnails/node-projects/bookdrop-thumb.jpg',
-			title: 'Book Club Database Exercise',
+			path: [ '../img/node-projects/portfolio-1.jpg' ],
+			thumbnail: '../img/thumbnails/node-projects/portfolio-thumb.jpg',
+			title: 'Portfolio Website with Database',
 			description:
-				'This exercise was an idea inspired by my wife and an old friend. The two have begun recording a podcast about selected books they read called "Books Are Great, Actually!". They are currently 3 episodes into recording at the time of writing! \n \nAnyway, I was still a novice with most of these technologies when I began this, so it was a huge learning experience for me. Looking at the code now, many things need serious refactoring, including the routes and CSS classes. \n \nThe website has many features still slated for implementation, including using a public API to check book information and possibly find cover images, a search function, sorting, duplicate checking to prevent duplicate books being added to the database, and associating comments with users and defining roles so "administrators" have control over all content. Other remaining tasks include refactoring CSS now that I know better methods, and adding EDIT, UPDATE, and DESTROY routes for comments. \n \nThe book logo is something I designed myself, while the awesome backdrop was obtained from unsplash (credit to Janko Ferlič).',
+				'Porftolio Inception! Just kidding, but you are using it right now! \n \nThis is my portfolio website, based upon my Image Gallery practice web app, which I decided to use as a prototype. My portfolio used to be hosted on Adobe Portfolio for expedience. However, it has had its issues, and I was determined to eventually create a portfolio website entirely on my own, from the ground up, that I had complete control over. \n \nLike the Book Club Database and the Image Gallery, this portfolio is connected to a MongoDB database, with collections of objects for each gallery. I will continue to improve this website as I improve my skills, and subsequent versions will be added here to keep track of the visual history of my portfolio. \n\nThis portfolio is deployed on Heroku CLI and my Route 53 domain (dasgeo.de) with AWS is pointed to it. Since the heroku app is on a dynamic IP, sadly I cannot use an A record in my DNS settings to redirect the apex domain to it as a static IP is required. That is why this page is on "portfolio.dasgeo.de" instead. \n\nWhy dasgeo.de? It happened to be the least expensive domain suffix available through Route 53, and if im using a German domain, why not call it "Das Geode"?',
 			tech: [
 				'NodeJS',
 				'Express',
 				'MongoDB',
 				'Mongoose',
-				'Passport',
-				'npm passport-local',
-				'npm passport-local-mongoose',
-				'npm method-override',
+				'npm dotenv',
+				'npm faker',
+				'npm body-parser',
 				'Javascript',
 				'Embedded Javascript',
 				'HTML/CSS',
@@ -32,7 +22,7 @@ const faker = require('faker'),
 				'Google Web Fonts',
 				'Git'
 			],
-			github: 'https://github.com/voxspero/book-club-database-exercise.git',
+			github: 'https://github.com/voxspero/portfolio.git',
 			year: '2019'
 		},
 		{
@@ -76,19 +66,29 @@ const faker = require('faker'),
 			year: '2019'
 		},
 		{
-			path: [ '../img/node-projects/portfolio-1.jpg' ],
-			thumbnail: '../img/thumbnails/node-projects/portfolio-thumb.jpg',
-			title: 'Portfolio Website with Database',
+			path: [
+				'../img/node-projects/bookdrop-1.jpg',
+				'../img/node-projects/bookdrop-2.jpg',
+				'../img/node-projects/bookdrop-3.jpg',
+				'../img/node-projects/bookdrop-4.jpg',
+				'../img/node-projects/bookdrop-5.jpg',
+				'../img/node-projects/bookdrop-6.jpg',
+				'../img/node-projects/bookdrop-7.jpg',
+				'../img/node-projects/bookdrop-8.jpg'
+			],
+			thumbnail: '../img/thumbnails/node-projects/bookdrop-thumb.jpg',
+			title: 'Book Club Database Exercise',
 			description:
-				'Porftolio Inception! Just kidding, but you are using it right now! \n \nThis is my portfolio website, based upon my Image Gallery practice web app, which I decided to use as a prototype. My portfolio used to be hosted on Adobe Portfolio for expedience. However, it has had its issues, and I was determined to eventually create a portfolio website entirely on my own, from the ground up, that I had complete control over. \n \nLike the Book Club Database and the Image Gallery, this portfolio is connected to a MongoDB database, with collections of objects for each gallery. I will continue to improve this website as I improve my skills, and subsequent versions will be added here to keep track of the visual history of my portfolio. \n\nThis portfolio is deployed on Heroku CLI and my Route 53 domain (dasgeo.de) with AWS is pointed to it. Since the heroku app is on a dynamic IP, sadly I cannot use an A record in my DNS settings to redirect the apex domain to it as a static IP is required. That is why this page is on "portfolio.dasgeo.de" instead. \n\nWhy dasgeo.de? It happened to be the least expensive domain suffix available through Route 53, and if im using a German domain, why not call it "Das Geode"?',
+				'This exercise was an idea inspired by my wife and an old friend. The two have begun recording a podcast about selected books they read called "Books Are Great, Actually!". They are currently 3 episodes into recording at the time of writing! \n \nAnyway, I was still a novice with most of these technologies when I began this, so it was a huge learning experience for me. Looking at the code now, many things need serious refactoring, including the routes and CSS classes. \n \nThe website has many features still slated for implementation, including using a public API to check book information and possibly find cover images, a search function, sorting, duplicate checking to prevent duplicate books being added to the database, and associating comments with users and defining roles so "administrators" have control over all content. Other remaining tasks include refactoring CSS now that I know better methods, and adding EDIT, UPDATE, and DESTROY routes for comments. \n \nThe book logo is something I designed myself, while the awesome backdrop was obtained from unsplash (credit to Janko Ferlič).',
 			tech: [
 				'NodeJS',
 				'Express',
 				'MongoDB',
 				'Mongoose',
-				'npm dotenv',
-				'npm faker',
-				'npm body-parser',
+				'Passport',
+				'npm passport-local',
+				'npm passport-local-mongoose',
+				'npm method-override',
 				'Javascript',
 				'Embedded Javascript',
 				'HTML/CSS',
@@ -97,7 +97,7 @@ const faker = require('faker'),
 				'Google Web Fonts',
 				'Git'
 			],
-			github: 'https://github.com/voxspero/portfolio.git',
+			github: 'https://github.com/voxspero/book-club-database-exercise.git',
 			year: '2019'
 		}
 	];
